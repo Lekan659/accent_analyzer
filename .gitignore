@@ -1,0 +1,18 @@
+# Ignore virtual environment
+venv/
+.env
+
+# Bytecode and Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# OS files
+.DS_Store
+
+# Streamlit settings
+.streamlit/
+
+# Logs or temp files
+*.log
+*.tmp
