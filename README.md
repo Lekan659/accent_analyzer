@@ -1,6 +1,6 @@
-# REM Waste - Accent Analyzer
+#Accent Analyzer
 
-A working tool that analyzes English accents from video/audio using Claude AI for direct voice pattern analysis.
+A working tool that analyzes English accents from video/audio using Gemini AI for direct voice pattern analysis.
 
 ## 📋 Requirements
 
@@ -18,10 +18,10 @@ requests==2.31.0
 
 ## 🔧 Setup Instructions
 
-### 1. Get Claude API Key
+### 1. Get Gemini API Key
 ```bash
 # Get your key from: https://console.anthropic.com/
-export ANTHROPIC_API_KEY="your-actual-key-here"
+export GOOGLE_GEMINI_API_KEY="your-actual-key-here"
 ```
 
 ### 2. Install Dependencies
@@ -45,7 +45,7 @@ streamlit run main.py
 
 1. **Audio Extraction**: Uses yt-dlp to extract audio from any video URL
 2. **Feature Analysis**: Librosa extracts acoustic features (formants, MFCC, spectral data)
-3. **Claude AI Analysis**: Sends features to Claude for direct accent pattern recognition
+3. **Gemini AI Analysis**: Sends features to Gemini for direct accent pattern recognition
 4. **Results**: Returns accent classification with confidence score
 
 ## 🔍 Key Technical Features
@@ -53,4 +53,4 @@ streamlit run main.py
 - **Direct Voice Analysis**: No text transcription - analyzes audio patterns directly
 - **Multiple Input Methods**: Video URLs (Loom, YouTube, etc.) or file uploads
 - **Acoustic Feature Extraction**: Formant frequencies, MFCC, spectral analysis
-- **Claude AI Integration**: Uses Claude
+- **Gemini AI Integration**: Uses Gemini
